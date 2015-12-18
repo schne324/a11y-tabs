@@ -1,6 +1,7 @@
 <!DOCTYPE html><html lang="en"><head><title>A11y Tabs</title><link rel="stylesheet" href="example.css"><link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Armata"></head><body><h1>A11y Tabs</h1><div class="container"><ul class="tabs"><li class="tab active">Components</li><li class="tab">Pages</li></ul><div class="panels"><div class="panel"><p>This is some content and stuff.  This is some content and stuff. This is some content and stuff. This is some content and stuff. This is some content and stuff. This is some content and stuff.</p><button type="button">Foo</button></div><div class="panel hide"><p>This is some other content and other stuff. This is some other content and other stuff. This is some other content and other stuff. This is some other content and other stuff. This is some other content and other stuff.</p><button type="button">Bar</button></div></div></div><script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.js"></script><script src="../a11y-tabs.js"></script><script>$('.tabs').a11yTabs({
 	panelSelector: '.panels .panel',
 	activeClass: 'active',
+	inactiveClass: 'noop',
 	panelShow: function (panel) {
 		$(panel).removeClass('hide');
 	},

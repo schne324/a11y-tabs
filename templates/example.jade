@@ -24,6 +24,7 @@ html(lang='en')
 			$('.tabs').a11yTabs({
 				panelSelector: '.panels .panel',
 				activeClass: 'active',
+				inactiveClass: 'noop',
 				panelShow: function (panel) {
 					$(panel).removeClass('hide');
 				},

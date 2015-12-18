@@ -41,9 +41,8 @@ function a11yTabs($container, options) {
    * Attributes
    */
 
-  // ensure each panel and each tab has an id
-  $panels.each(setId);
-  $tabs.each(setId);
+  // ensure each panel and each tab has a unique id
+  $tabs.add($panels).each(setId);
 
   $tabs.each(function (i, tab) {
     var isSelected = false;
