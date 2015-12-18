@@ -112,7 +112,13 @@
     "maxerr"        : 100,      // Maximum errors before stopping.
     "predef"        : [         // Extra globals.
         "jQuery",
-        "require"
+        "require",
+        "assert",
+        "describe",
+        "it",
+        "beforeEach",
+        "after",
+        "afterEach"
     ],
     "indent"        : 2         // Specify indentation spacing
 }

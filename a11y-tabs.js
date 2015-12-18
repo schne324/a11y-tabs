@@ -5,7 +5,7 @@
 
   var defaults = {
     tabSelector: 'li', // qualified within `this`
-    panelGetter: '.panels li', // qualified within document
+    panelSelector: '.panels li', // qualified within document
     activeClass: 'active', // also used for finding the initially active panel
     inactiveClass: null,
     panelShow: function (panel) {

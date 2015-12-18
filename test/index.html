@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tests </title>
+        <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+    </head>
+    <body>
+        <div id="mocha"></div>
+        <div id="fixture"></div>
+        <script src="../node_modules/mocha/mocha.js"></script>
+        <script src="../node_modules/chai/chai.js"></script>
+        <script>
+            mocha.ui('bdd');
+            mocha.reporter('html');
+            var assert = chai.assert;
+        </script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+        <script src="../a11y-tabs.js"></script>
+        <script src="./index.js"></script>
+        <script>
+            if (window.mochaPhantomJS) { mochaPhantomJS.run(); }
+            else { mocha.run(); }
+        </script>
+    </body>
+</html>
