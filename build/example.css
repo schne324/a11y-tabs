@@ -1,0 +1,32 @@
+h1 {
+  text-align: center;
+}
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+.container .tabs {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.container .tabs .tab {
+  padding: 15px;
+  display: inline-block;
+  cursor: pointer;
+}
+.container .tabs .tab.active {
+  border: 2px solid #ccc;
+  border-bottom: none;
+  background-color: #fff;
+  z-index: 9;
+}
+.container .panels {
+  width: 100%;
+  border: 2px solid #ccc;
+  text-align: center;
+  margin-top: -2px;
+}
+.container .panels .panel.hide {
+  display: none;
+}

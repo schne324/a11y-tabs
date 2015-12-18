@@ -1,0 +1,33 @@
+doctype html
+html(lang='en')
+	head
+		title A11y Tabs
+		link(rel="stylesheet" href="example.css")
+		link(rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
+		link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Armata")
+	body
+		h1 A11y Tabs
+		.container
+			ul.tabs
+				li.tab.active Components
+				li.tab Pages
+			.panels
+				.panel
+					p This is some content and stuff.  This is some content and stuff. This is some content and stuff. This is some content and stuff. This is some content and stuff. This is some content and stuff.
+					button(type='button') Foo
+				.panel.hide
+					p This is some other content and other stuff. This is some other content and other stuff. This is some other content and other stuff. This is some other content and other stuff. This is some other content and other stuff.
+					button(type='button') Bar
+		script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.js')
+		script(src='../a11y-tabs.js')
+		script.
+			$('.tabs').a11yTabs({
+				panelSelector: '.panels .panel',
+				activeClass: 'active',
+				panelShow: function (panel) {
+					$(panel).removeClass('hide');
+				},
+				panelHide: function (panel) {
+					$(panel).addClass('hide');
+				}
+			});
