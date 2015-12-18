@@ -2,7 +2,7 @@
 Creating fully accessible tabs
 
 ## Installation
-`bower install a11y-tabs` (todo)
+`bower install a11y-tabs`
 
 ## Options
 - `tabSelector` _({String} [required])_: The selector for the tab elements.  This selector will be qualified within `this` (the tab container) (Defaults to `'li'`)
