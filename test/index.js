@@ -81,6 +81,8 @@ describe('a11yTabs', function () {
 				standardCall();
 				var $panels = jQuery('#fixture .panel');
 
+				assert.equal(jQuery('#fixture .tabs').attr('role'), 'tablist');
+
 				$tabs.each(function (i, tab) {
 					var $tab = jQuery(tab);
 					if (i === 0) {
