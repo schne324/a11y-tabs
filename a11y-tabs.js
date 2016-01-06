@@ -41,6 +41,8 @@ function a11yTabs($container, options) {
    * Attributes
    */
 
+  $container.attr('role', 'tablist');
+
   // ensure each panel and each tab has a unique id
   $tabs.add($panels).each(setId);
 
