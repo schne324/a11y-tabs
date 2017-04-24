@@ -87,7 +87,7 @@ function a11yTabs($container, options) {
     if (e.which === 33) { // PAGE UP
       e.preventDefault();
       // focus the associated tab
-      $('[aria-owns="' + $panel.prop('id') + '"]').focus();
+      $('[aria-controls="' + $panel.prop('id') + '"]').focus();
     }
   });
 
@@ -110,7 +110,7 @@ function a11yTabs($container, options) {
       case 34: // page down
         e.preventDefault();
         // focus the panel
-        $('#' + $tab.attr('aria-owns')).focus();
+        $('#' + $tab.attr('aria-controls')).focus();
     }
   });
 
