@@ -60,7 +60,7 @@ function a11yTabs($container, options) {
       'tabIndex': (isSelected) ? 0 : -1, // leveraging jQuery's propFix
       'role': 'tab',
       'aria-selected': isSelected,
-      'aria-owns': $thisPanel.prop('id')
+      'aria-controls': $thisPanel.prop('id')
     });
   });
 
