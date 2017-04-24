@@ -94,7 +94,7 @@ describe('a11yTabs', function () {
 					}
 					assert($tab.prop('id').length);
 					assert.equal($tab.attr('role'), 'tab');
-					assert.equal($tab.attr('aria-owns'), $panels.eq(i).prop('id'));
+					assert.equal($tab.attr('aria-controls'), $panels.eq(i).prop('id'));
 				});
 			});
 		});
