@@ -1,6 +1,6 @@
 {
   "name": "a11y-tabs",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "accessible tabs",
   "main": "a11y-tabs.js",
   "scripts": {
@@ -19,7 +19,6 @@
   "devDependencies": {
     "better-assert": "^1.0.2",
     "chai": "^3.4.1",
-    "fs-extra": "^0.26.3",
     "gulp": "^3.9.0",
     "gulp-jade": "^1.1.0",
     "gulp-open": "^1.0.0",
